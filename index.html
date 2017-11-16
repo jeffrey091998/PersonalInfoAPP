@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="index.js"></script>
+    <script src="index.js"></script>
+    
+<center>
+<br><br>
+
+ <div style="background-image: url(3.jpg); height: 600px; width: 400px; border: 1px solid Rel;">
+<body background="qq.jpg">
+
+<script>	
+	function Save(){
+
+window.localStorage['fname'] = document.getElementById('fname') .value;
+document.getElementById('fname').value=null
+window.localStorage['lname'] = document.getElementById('lname') .value;
+document.getElementById('lname').value=null
+	
+window.localStorage['email'] = document.getElementById('email') .value;
+document.getElementById('email').value=null
+window.localStorage['num'] = document.getElementById('num') .value;
+document.getElementById('num').value=null
+
+window.localStorage['add'] = document.getElementById('add') .value;
+document.getElementById('add').value=null
+
+window.localStorage['city'] = document.getElementById('city') .value;
+document.getElementById('city').value=null
+
+window.localStorage['city'] = document.getElementById('city') .value;
+document.getElementById('city').value=null
+
+window.localStorage['drop'] = document.getElementById('drop') .value;
+
+}
+</script>
+<center>
+
+<fieldset>
+
+<h1 >Personal Info</h1>
+
+	<label>First Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="fname" placeholder="Enter your First name:"></label><br>
+	<br>
+	<label>Last Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="lname" placeholder="Enter your Last name:"></label><br>
+	<br>
+	<label>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email" placeholder="Enter your email:"></label><br>
+	<br>
+	<label>Number: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="num" placeholder="Enter your contact number:"></label><br>
+	<br>
+	<label>Address: &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="add" placeholder="Enter your address:"></label><br>
+	<br>
+	<label>City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="city" placeholder="Enter your city:"></label><br>
+	<br>
+
+	Location:<div>
+<select name="mydropdown" id="drop">
+<option value="Philippines" id="phi">Philippines</option>
+<option value="Korea" id="kor">Korea</option>
+<option value="Japan" id="jap">Japan</option>
+</select>
+</div>
+
+<br><br>
+<input type="submit" value="Save" onclick="Save()">
+
+</fieldset>
+</center>
+</body>
+</html>
